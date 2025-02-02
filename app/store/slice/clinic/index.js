@@ -21,7 +21,6 @@ export const clinicSlice = createSlice({
         state.isLoadingClinicList = true;
       })
       .addCase(getClinicListThunk.fulfilled, (state, action) => {
-        console.log("🚀 ~ .addCase ~ action:", action);
         state.isLoadingClinicList = false;
         state.clinicList = action.payload;
       })
@@ -34,7 +33,6 @@ export const clinicSlice = createSlice({
         state.isLoadingClinicDetail = true;
       })
       .addCase(getClinicDetailThunk.fulfilled, (state, action) => {
-        console.log("🚀 ~ .addCase ~ action:", action);
         state.isLoadingClinicDetail = false;
         state.clinicDetail = action.payload;
       })
