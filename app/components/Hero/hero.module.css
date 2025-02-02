@@ -1,0 +1,30 @@
+.component_wrapper {
+  width: 100%;
+  min-height: 755px;
+  background-color: #f3fffd;
+  margin-top: 125px;
+}
+.container {
+  padding: 50px 5%;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 120px;
+  right: -5%;
+  background: linear-gradient(#8edace66, #357a7b66);
+  border-radius: 100%;
+  z-index: 0;
+  clip-path: inset(0 0 0 -100%);
+}
+
+.circle_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}

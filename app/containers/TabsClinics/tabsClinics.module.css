@@ -1,0 +1,84 @@
+.clinic_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 12px;
+  align-items: center;
+}
+
+.clinic_subitem_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.clinic_item_title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2a37;
+  margin: 0;
+}
+
+.clinic_item_type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  margin: 0;
+}
+
+.clinic_item_info {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4b5563;
+  margin: 0;
+}
+
+.btn_appointment {
+  height: max-content;
+  padding: 16px 24px;
+  background-color: #357a7b;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  width: max-content;
+  cursor: pointer;
+  border: none;
+}
+
+.btn_appointment:hover {
+  background-color: #205556;
+}
+
+.carousel_specialist :global(.slick-list .slick-track) {
+  margin: 20px 0;
+}
+
+.carousel_specialist :global(.slick-dots li button) {
+  background-color: #428283 !important;
+}
+
+.carousel_specialist :global(.slick-dots) {
+  margin-bottom: -25px;
+}
+
+.section_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2a37;
+  margin: 0;
+}
+
+.facility_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 50%;
+  margin: 20px 0;
+}
+
+.facility_text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4b5563;
+  margin: 0;
+}

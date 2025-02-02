@@ -1,0 +1,15 @@
+.container {
+  margin: 60px 0 80px;
+}
+
+.section_title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #3d3d3d;
+  margin-bottom: 60px;
+  text-align: center;
+
+  span {
+    color: #357a7b;
+  }
+}

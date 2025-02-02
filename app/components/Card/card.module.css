@@ -1,0 +1,43 @@
+.component_wrapper {
+  min-width: 300px;
+  padding: 20px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px #0000001a;
+  background-color: white;
+}
+
+.image_container {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+}
+
+.card_item_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.card_title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2a37;
+  margin: 0;
+}
+
+.card_subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  margin: 0;
+}
+
+.card_info {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6b7280;
+  margin: 0;
+}
