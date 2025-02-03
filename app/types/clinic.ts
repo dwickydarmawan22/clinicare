@@ -34,6 +34,6 @@ export interface Clinic {
     date: string;
   }
   
-  export interface GeneralTabsProps {
+  export interface ClinicTabsProps {
     clinic: Clinic;
   }

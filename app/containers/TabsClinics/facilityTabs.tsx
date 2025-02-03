@@ -1,4 +1,4 @@
-import { GeneralTabsProps } from "@/app/types/clinic";
+import { ClinicTabsProps } from "@/app/types/clinic";
 import {
   CarOutlined,
   HomeOutlined,
@@ -14,14 +14,14 @@ const facilites = [
   { name: "Spa", icon: <UserOutlined style={{ fontSize: "24px" }} /> },
 ];
 
-export const FacilityTabs = ({ clinic }: GeneralTabsProps) => {
+export const FacilityTabs = ({ clinic }: ClinicTabsProps) => {
   const groupedItems = clinic?.facilities?.map((tab) => ({
     label: tab?.name,
     children: facilites.find((item) => item?.name === tab?.name)?.icon,
   }));
   return (
     <>
-    <h1 className={styles.section_title}>Fasilitas</h1>
+      <h1 className={styles.section_title}>Fasilitas</h1>
       <div className={styles.facility_wrapper}>
         {groupedItems?.map((item, index) => (
           <div

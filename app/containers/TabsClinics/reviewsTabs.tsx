@@ -1,9 +1,9 @@
-import { GeneralTabsProps } from "@/app/types/clinic";
+import { ClinicTabsProps } from "@/app/types/clinic";
 import { Carousel, ConfigProvider } from "antd";
 import styles from "./tabsClinics.module.css";
 import { CardReview } from "@/app/components/CardReview";
 
-export const ReviewsTabs = ({ clinic }: GeneralTabsProps) => {
+export const ReviewsTabs = ({ clinic }: ClinicTabsProps) => {
   return (
     <>
       <h1 className={styles.section_title}>Reviews</h1>

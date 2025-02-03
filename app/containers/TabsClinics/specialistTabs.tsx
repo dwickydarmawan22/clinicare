@@ -2,9 +2,9 @@ import { Carousel, ConfigProvider } from "antd";
 import styles from "./tabsClinics.module.css";
 import DoctorImage from "../../../public/doctor_1.jpg";
 import { Card } from "@/app/components/Card";
-import { GeneralTabsProps } from "@/app/types/clinic";
+import { ClinicTabsProps } from "@/app/types/clinic";
 
-export const SpecialistTabs = ({ clinic }: GeneralTabsProps) => {
+export const SpecialistTabs = ({ clinic }: ClinicTabsProps) => {
   return (
     <>
     <h1 className={styles.section_title}>Spesialis</h1>

@@ -11,7 +11,7 @@ import { Carousel, ConfigProvider, Divider } from "antd";
 import DoctorImage from "../../../public/doctor_1.jpg";
 import styles from "./tabsClinics.module.css";
 import { CardReview } from "@/app/components/CardReview";
-import { GeneralTabsProps } from "@/app/types/clinic";
+import { ClinicTabsProps } from "@/app/types/clinic";
 
 const facilites = [
   { name: "WiFi", icon: <WifiOutlined style={{ fontSize: "24px" }} /> },
@@ -20,7 +20,7 @@ const facilites = [
   { name: "Spa", icon: <UserOutlined style={{ fontSize: "24px" }} /> },
 ];
 
-export const GeneralTabs = ({ clinic }: GeneralTabsProps) => {
+export const GeneralTabs = ({ clinic }: ClinicTabsProps) => {
   const groupedItems = clinic?.facilities?.map((tab) => ({
     label: tab?.name,
     children: facilites.find((item) => item?.name === tab?.name)?.icon,

@@ -100,7 +100,7 @@ const items: TabsProps["items"] = [
   {
     key: "3",
     label: "Lokasi",
-    children: <LocationTabs />,
+    children: <LocationTabs clinic={dataClinic} />,
   },
 ];
 
