@@ -11,46 +11,7 @@ import { Carousel, ConfigProvider, Divider } from "antd";
 import DoctorImage from "../../../public/doctor_1.jpg";
 import styles from "./tabsClinics.module.css";
 import { CardReview } from "@/app/components/CardReview";
-
-interface Clinic {
-  id: string;
-  name: string;
-  type: string;
-  address: string;
-  rating: number;
-  totalReviews: number;
-  images: string[];
-  tabs: string[];
-  specialists: Specialist[];
-  facilities: Facility[];
-  reviews: Review[];
-}
-
-interface Specialist {
-  id: number;
-  name: string;
-  specialization: string;
-  rating: number;
-  totalReviews: number;
-  image: string;
-}
-
-interface Facility {
-  name: string;
-  icon: string;
-}
-
-interface Review {
-  id: number;
-  userName: string;
-  rating: number;
-  comment: string;
-  date: string;
-}
-
-interface GeneralTabsProps {
-  clinic: Clinic;
-}
+import { GeneralTabsProps } from "@/app/types/clinic";
 
 const facilites = [
   { name: "WiFi", icon: <WifiOutlined style={{ fontSize: "24px" }} /> },

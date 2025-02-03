@@ -1,5 +1,9 @@
 import { ConfigProvider, Tabs, TabsProps } from "antd";
 import { GeneralTabs } from "./generalTabs";
+import { SpecialistTabs } from "./specialistTabs";
+import { FacilityTabs } from "./facilityTabs";
+import { ReviewsTabs } from "./reviewsTabs";
+import { LocationTabs } from "./locationTabs";
 
 const dataClinic = {
   id: "1",
@@ -81,22 +85,22 @@ const items: TabsProps["items"] = [
   {
     key: "2",
     label: "Spesialis",
-    children: "Content of Tab Pane 2",
+    children: <SpecialistTabs clinic={dataClinic} />,
   },
   {
     key: "3",
     label: "Fasilitas",
-    children: "Content of Tab Pane 3",
+    children: <FacilityTabs clinic={dataClinic} />,
   },
   {
     key: "3",
     label: "Review",
-    children: "Content of Tab Pane 3",
+    children: <ReviewsTabs clinic={dataClinic} />,
   },
   {
     key: "3",
     label: "Lokasi",
-    children: "Content of Tab Pane 3",
+    children: <LocationTabs />,
   },
 ];
 
